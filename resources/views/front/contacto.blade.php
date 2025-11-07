@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Pequeños Gigantes</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>¡Contáctanos!</h1>
+    <p>¿Tienes dudas, sugerencias o quieres saludarnos? ¡Escríbenos!</p>
+  </header>
+
+  <main>
+    <section class="formulario-contacto">
+      <form action="#" method="post">
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Mariana Pérez" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Ej. mariana@email.com" required>
+
+        <label for="mensaje">¿Cómo podemos ayudarte?</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="{{ url('/index') }}">Inicio</a> |
+      <a href="login.blade.php">Iniciar sesión</a> |
+      <a href="nosotros.blade.php">Nosotros</a>
+    </nav>
+    <p>&copy; 2025 Pequeños Gigantes</p>
+  </footer>
+
+</body>
+</html>

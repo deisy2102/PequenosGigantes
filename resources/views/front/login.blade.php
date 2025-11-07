@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión | Pequeños Gigantes</title>
+  <link rel="stylesheet" href="{{ asset('css/estilos.css') }}">
+</head>
+<body>
+
+  <header>
+    <h1>¡Bienvenido amiguito!</h1>
+    <p>Ingresa tus datos para comenzar a aprender</p>
+  </header>
+
+  <header>
+    <div class="logo-contenedor">
+      <img src="/img/niño.png" alt="Logo Pequeños Gigantes">
+    </div>
+  </header>
+  <main>
+    <section class="login">
+      <form action="#" method="post">
+        <label for="usuario">Tu nombre</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ej. Mariana" required>
+
+        <label for="contrasena">Tu contraseña secreta</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="••••••••" required>
+
+        <button type="submit">¡Vamos a aprender!</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="index.blade.php">Inicio</a> |
+      <a href="contacto.blade.php">Contacto</a> |
+      <a href="nosotros.blade.php">Nosotros</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
